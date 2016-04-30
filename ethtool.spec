@@ -4,7 +4,7 @@
 #
 Name     : ethtool
 Version  : 4.5
-Release  : 11
+Release  : 12
 URL      : http://ftp.kernel.org/pub/software/network/ethtool/ethtool-4.5.tar.xz
 Source0  : http://ftp.kernel.org/pub/software/network/ethtool/ethtool-4.5.tar.xz
 Summary  : No detailed summary available
