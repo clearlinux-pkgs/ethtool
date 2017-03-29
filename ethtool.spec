@@ -4,9 +4,9 @@
 #
 Name     : ethtool
 Version  : 4.8
-Release  : 14
-URL      : http://ftp.kernel.org/pub/software/network/ethtool/ethtool-4.8.tar.xz
-Source0  : http://ftp.kernel.org/pub/software/network/ethtool/ethtool-4.8.tar.xz
+Release  : 15
+URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.8.tar.xz
+Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.8.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -39,6 +39,7 @@ doc components for the ethtool package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1490827388
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -50,6 +51,7 @@ export no_proxy=localhost
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
+export SOURCE_DATE_EPOCH=1490827388
 rm -rf %{buildroot}
 %make_install
 
