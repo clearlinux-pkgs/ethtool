@@ -4,7 +4,7 @@
 #
 Name     : ethtool
 Version  : 4.10
-Release  : 16
+Release  : 17
 URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.10.tar.xz
 Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.10.tar.xz
 Summary  : No detailed summary available
