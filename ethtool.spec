@@ -4,7 +4,7 @@
 #
 Name     : ethtool
 Version  : 4.11
-Release  : 18
+Release  : 19
 URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.11.tar.xz
 Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.11.tar.xz
 Summary  : No detailed summary available
@@ -42,7 +42,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1496583235
+export SOURCE_DATE_EPOCH=1496583402
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -Os -Wl,--gc-sections -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export FCFLAGS="$CFLAGS -O3 -Os -Wl,--gc-sections -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export FFLAGS="$CFLAGS -O3 -Os -Wl,--gc-sections -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
+export CXXFLAGS="$CXXFLAGS -O3 -Os -Wl,--gc-sections -fdata-sections -ffat-lto-objects -ffunction-sections -flto -fno-semantic-interposition "
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -54,7 +61,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1496583235
+export SOURCE_DATE_EPOCH=1496583402
 rm -rf %{buildroot}
 %make_install
 
