@@ -4,7 +4,7 @@
 #
 Name     : ethtool
 Version  : 4.15
-Release  : 21
+Release  : 22
 URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.15.tar.xz
 Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-4.15.tar.xz
 Summary  : No detailed summary available
