@@ -1,5 +1,5 @@
 PKG_NAME := ethtool
-URL = https://www.kernel.org/pub/software/network/ethtool/ethtool-5.14.tar.xz
+URL = https://www.kernel.org/pub/software/network/ethtool/ethtool-5.15.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
