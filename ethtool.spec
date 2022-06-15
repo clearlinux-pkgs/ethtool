@@ -4,7 +4,7 @@
 #
 Name     : ethtool
 Version  : 5.18
-Release  : 44
+Release  : 45
 URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-5.18.tar.xz
 Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-5.18.tar.xz
 Summary  : No detailed summary available
