@@ -5,7 +5,7 @@
 #
 Name     : ethtool
 Version  : 6.3
-Release  : 50
+Release  : 51
 URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-6.3.tar.xz
 Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-6.3.tar.xz
 Summary  : No detailed summary available
@@ -73,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683590629
+export SOURCE_DATE_EPOCH=1685499767
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -105,7 +105,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1683590629
+export SOURCE_DATE_EPOCH=1685499767
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ethtool
 cp %{_builddir}/ethtool-%{version}/COPYING %{buildroot}/usr/share/package-licenses/ethtool/4cc77b90af91e615a64ae04893fdffa7939db84c || :
