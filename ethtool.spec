@@ -4,10 +4,10 @@
 # Using build pattern: configure
 #
 Name     : ethtool
-Version  : 6.4
-Release  : 52
-URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-6.4.tar.xz
-Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-6.4.tar.xz
+Version  : 6.5
+Release  : 53
+URL      : https://www.kernel.org/pub/software/network/ethtool/ethtool-6.5.tar.xz
+Source0  : https://www.kernel.org/pub/software/network/ethtool/ethtool-6.5.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -61,10 +61,10 @@ man components for the ethtool package.
 
 
 %prep
-%setup -q -n ethtool-6.4
-cd %{_builddir}/ethtool-6.4
+%setup -q -n ethtool-6.5
+cd %{_builddir}/ethtool-6.5
 pushd ..
-cp -a ethtool-6.4 buildavx2
+cp -a ethtool-6.5 buildavx2
 popd
 
 %build
@@ -72,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688404002
+export SOURCE_DATE_EPOCH=1694616439
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -104,7 +104,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1688404002
+export SOURCE_DATE_EPOCH=1694616439
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/ethtool
 cp %{_builddir}/ethtool-%{version}/COPYING %{buildroot}/usr/share/package-licenses/ethtool/4cc77b90af91e615a64ae04893fdffa7939db84c || :
